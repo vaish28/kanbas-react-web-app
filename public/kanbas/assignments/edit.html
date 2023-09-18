@@ -50,7 +50,7 @@
           </select>
           <hr />
           <h3>Assignment Name</h3>
-          <form id="assignment">
+          <form id="assignment" action="index.html">
             <input value="A1 - ENV + HTML" />
             <br />
             <br />
@@ -83,7 +83,7 @@
             </select>
             <br />
 
-            <label for="select-field-submissiontype">Display Grade as</label>
+            <label for="select-field-submissiontype">Submission type</label>
             <br />
             <select
               style="margin-bottom: 1rem"
@@ -95,116 +95,128 @@
 
             <label for="select-field-entryoptions">Online Entry Options</label>
             <br />
-            <input type="checkbox"
-            value = "textentry"
-            name = "online-entry"
-            id = "checkbox-text-entry" />
+            <input
+              type="checkbox"
+              value="textentry"
+              name="online-entry"
+              id="checkbox-text-entry"
+            />
             <label for="checkbox-text-entry">Text Entry</label>
-            <br/>
+            <br />
 
-            <input type="checkbox"
-            value = "URL"
-            name = "online-entry"
-            id = "checkbox-url" />
+            <input
+              type="checkbox"
+              value="URL"
+              name="online-entry"
+              id="checkbox-url"
+            />
             <label for="checkbox-media">Webiste URL</label>
-            <br/>
+            <br />
 
-            <input type="checkbox"
-            value = "mediarecording"
-            name = "online-entry"
-            id = "checkbox-media-recording" />
+            <input
+              type="checkbox"
+              value="mediarecording"
+              name="online-entry"
+              id="checkbox-media-recording"
+            />
             <label for="checkbox-media-recording">Media Recordings</label>
-            <br/>
+            <br />
 
-            <input type="checkbox"
-            value = "studentann"
-            name = "online-entry"
-            id = "checkbox-student-ann" />
+            <input
+              type="checkbox"
+              value="studentann"
+              name="online-entry"
+              id="checkbox-student-ann"
+            />
             <label for="checkbox-student-ann">Student Annotations</label>
-            <br/>
+            <br />
 
-            <input type="checkbox"
-            value = "fileuploads"
-            name = "online-entry"
-            id = "checkbox-file-upload" />
+            <input
+              type="checkbox"
+              value="fileuploads"
+              name="online-entry"
+              id="checkbox-file-upload"
+            />
             <label for="checkbox-student-fileupload">File Uploads</label>
-            <br/>
-            <br/>
-            <label for="select-field-submissionattempt">Submission Attempts</label>
-            <br/>
+            <br />
+            <br />
+            <label for="select-field-submissionattempt"
+              >Submission Attempts</label
+            >
+            <br />
             <select id="select-field-submissionattempt">
               <option>Unlimited</option>
             </select>
-            <br/>
-            <br/>
+            <br />
+            <br />
 
             <label for="select-field-plagiarismreview">Plagiarism Review</label>
-            <br/>
+            <br />
             <select id="select-field-plagiarismreview">
               <option>None</option>
             </select>
-            <br/>
-            <br/>
-
+            <br />
+            <br />
 
             <label for="select-field-plagiarismreview">Group Assignment</label>
-            <br/>
-            <input type="checkbox"
-            value = "groupass"
-            name = "online-entry"
-            id = "checkbox-group-ass" />
+            <br />
+            <input
+              type="checkbox"
+              value="groupass"
+              name="online-entry"
+              id="checkbox-group-ass"
+            />
             <label for="checkbox-group-ass">This is a group Assignment</label>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <span>Peer Reviews</span>
-            <br/>
-            <input type="checkbox"
-            value = "groupass"
-            name = "online-entry"
-            id = "checkbox-group-ass" />
+            <br />
+            <input
+              type="checkbox"
+              value="groupass"
+              name="online-entry"
+              id="checkbox-group-ass"
+            />
             <label for="checkbox-group-ass">Requires Peer Reviews</label>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <label for="text-assign">Assign</label> <br />
-							<label for="text-assign">Assign to</label>
-							<br />
-							<input
-								style="margin-bottom: 1rem"
-								type="text"
-								id="text-assign"
-								value="Everyone"
-							/><br />
+            <label for="text-assign">Assign to</label>
+            <br />
+            <input
+              style="margin-bottom: 1rem"
+              type="text"
+              id="text-assign"
+              value="Everyone"
+            /><br />
 
+            <label for="text-due">Due</label> <br />
+            <input
+              style="margin-bottom: 1rem"
+              type="date"
+              id="text-due"
+              value="2021-01-01"
+            /><br />
 
-							<label for="text-due">Due</label> <br />
-							<input
-								style="margin-bottom: 1rem"
-								type="date"
-								id="text-due"
-								value="2021-01-01"
-							/><br />
+            <label for="text=available-from">Available From</label>
+            <br />
+            <input
+              style="margin-bottom: 1rem"
+              type="date"
+              id="text-available-from"
+              value="2021-01-01"
+            /><br />
 
-							
-							<label for="text=available-from">Available From</label>
-							<br />
-							<input
-								style="margin-bottom: 1rem"
-								type="date"
-								id="text-available-from"
-								value="2021-01-01"
-							/><br />
+            <label for="text-until">Until</label> <br />
+            <input
+              style="margin-bottom: 1rem"
+              type="date"
+              id="text-until"
+              value="2021-01-01"
+            /><br />
 
-							
-							<label for="text-until">Until</label> <br />
-							<input
-								style="margin-bottom: 1rem"
-								type="date"
-								id="text-until"
-								value="2021-01-01"
-							/><br />
-
-							<button type="submit">Cancel</button>
-							<button type="submit">Save</button>
+            <button type="submit">Cancel</button>
+            <button type="submit">Save</button>
           </form>
         </td>
       </tr>

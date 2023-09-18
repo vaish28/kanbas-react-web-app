@@ -1,140 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <table class="prifile-edit-table" width="50%">
-      <tbody>
-        <tr>
-          <!-- First Column - Kanbas Navigation -->
-          <td class="column-one" valign="top" style="padding-right: 20px">
-            <ul>
-              <li><a href="#">Account</a></li>
-              <li><a href="#"> Dashboard</a></li>
-              <li><a href="../home.html">Courses</a></li>
-              <li><a href="#"> Calendar</a></li>
-              <li><a href="#"> Inbox</a></li>
-              <li><a href="#"> Studio</a></li>
-              <li><a href="#"> Commons</a></li>
-              <li><a href="#"> Help</a></li>
-            </ul>
-          </td>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <table class="prifile-edit-table" width="50%">
+    <tbody>
+      <tr>
+        <!-- First Column - Kanbas Navigation -->
+        <td class="column-one" valign="top" style="padding-right: 20px">
+          <ul>
+            <li><a href="index.html">Account</a></li>
+            <li><a href="#"> Dashboard</a></li>
+            <li><a href="../home.html">Courses</a></li>
+            <li><a href="#"> Calendar</a></li>
+            <li><a href="#"> Inbox</a></li>
+            <li><a href="#"> Studio</a></li>
+            <li><a href="#"> Commons</a></li>
+            <li><a href="#"> Help</a></li>
+          </ul>
+        </td>
 
-          <td class="column-two" valign="top" style="padding-right: 20px">
-            <ul>
-              <li><a href="#">Notifications</a></li>
-              <li><a href="index.html"> Profile</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#"> Settings</a></li>
-              <li><a href="#"> ePortfolios</a></li>
-              <li><a href="#"> The Hub </a></li>
-              <li><a href="#"> Qwickly Course Tools</a></li>
-              <li><a href="#"> Global Announcements</a></li>
-            </ul>
-          </td>
+        <td class="column-two" valign="top" style="padding-right: 20px">
+          <ul>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="index.html"> Profile</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#"> Settings</a></li>
+            <li><a href="#"> ePortfolios</a></li>
+            <li><a href="#"> The Hub </a></li>
+            <li><a href="#"> Qwickly Course Tools</a></li>
+            <li><a href="#"> Global Announcements</a></li>
+          </ul>
+        </td>
 
-          <td class="column-three" valign="top" style="padding: 10px">
-            <p>Jose Annunziato</p>
-            <form id="edit-profile">
-              <label for="name-profile">Name:*</label>
-              <input
-                type="text"
-                value="Jose Annunziato"
-                id="name-profile"
-                style="margin-bottom: 1rem"
-              />
+        <td class="column-three" valign="top" style="padding-left: 30px">
+          <h2> Vaishnavi Madhekar</h2>
+          <form id="edit-profile" action = "index.html">
+            <label for="name-profile">Name:*</label>
+            <input
+              type="text"
+              value="Vaishnavi Madhekar"
+              id="name-profile"
+              style="margin-bottom: 1rem"
+              name = "name"
+            />
 
-              <label for="name-pronouns">Pronouns:</label>
+            <label for="name-pronouns">Pronouns:</label>
 
-              <select id="name-pronouns" style="margin-bottom: 1rem">
-                <option>None</option>
-              </select>
-              <br />
+            <select id="name-pronouns" style="margin-bottom: 1rem" name = "pronouns">
+              <option>None</option>
+            </select>
+            <br />
 
-              <label for="title-profile">Title:</label>
-              <input
-                type="text"
-                id="title-profile"
-                style="margin-bottom: 1rem"
-              />
+            <label for="title-profile">Title:</label>
+            <input type="text" id="title-profile" style="margin-bottom: 1rem" name="title" />
 
-              <h2>Contact</h2>
-              <p style="margin-top: 1rem">
-                No registered services, you can add some on the
-                <a href="#">settings</a>
-                page.
-              </p>
+            <h4>Contact</h4>
+            <p style="margin-top: 1rem">
+              No registered services, you can add some on the
+              <a href="#">settings</a>
+              page.
+            </p>
 
-              <h2>Biography</h2>
-              <p>
-                Faculty, Software Engineer, AI, Space, and renewables
-                enthusiasts.
-              </p>
+            <h4>Biography</h4>
+            <p>
+              Faculty, Software Engineer, AI, Space, and renewables enthusiasts.
+            </p>
 
-              <textarea
-                style="margin: 0; text-align: left"
-                id="biography"
-                style="margin: 1rem 0"
-                cols="50"
-                rows="3"
-              >
+            <textarea
+              style="margin: 0; text-align: left"
+              id="biography"
+              style="margin: 1rem 0"
+              cols="50"
+              rows="3"
+              name="biography"
+            >
 Faculty, Software Engineer, AI, Space, and renewables enthusiasts.</textarea
-              >
-              <h2>Links</h2>
-              <ul>
-                <li>
-                  <a href="#">YouTube</a>
-                  <span style="color: blue">
-                    &#8594; Links to an external site</span
-                  >
-                </li>
-              </ul>
-              <table>
-                <thead>
-                  <th style="padding-right: 10px">Title</th>
-                  <th></th>
-                  <th></th>
-                  <th style="padding-left: 10px">URL</th>
-                  <th></th>
-                  <th></th>
-                </thead>
+            >
+            <h4>Links</h4>
+            <ul>
+              <li>
+                <a href="#">YouTube</a>
+                <span style="color: blue">
+                  &#8594; Links to an external site</span
+                >
+              </li>
+            </ul>
+            <table>
+              <thead>
+                <th style="padding-right: 10px">Title</th>
+                <th></th>
+                <th></th>
+                <th style="padding-left: 10px">URL</th>
+                <th></th>
+                <th></th>
+              </thead>
 
-                <tbody>
-                  <td>
-                    <input
-                      style="padding-right: 10px"
-                      type="text"
-                      id="text-title"
-                      value="YouTube"
-                    />
-                  </td>
-                  <td></td>
-                  <td>&#8594;</td>
-                  <td>
-                    <input
-                      type="text"
-                      id="text-link-url"
-                      value="https://www.youtube.com/"
-                    />
-                  </td>
-                  <td>
-                    <a href="#">Remove</a>
-                  </td>
-                  <td></td>
-                </tbody>
-              </table>
-              <button type="button">Add another link</button> <br />
-              <button type="button">Cancel</button>
-              <button type="submit">Save Profile</button><br />
-              <button type="button">Edit Profile</button>
-              <button type="submit">Cancel Editing</button><br />
-            </form>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
+              <tbody>
+                <td>
+                  <input
+                    style="padding-right: 10px"
+                    type="text"
+                    id="text-title"
+                    value="YouTube"
+                  />
+                </td>
+                <td></td>
+                <td>&#8594;</td>
+                <td>
+                  <input
+                    type="text"
+                    id="text-link-url"
+                    value="https://www.youtube.com/channel/UCYZc6M7kL1IxxN57_ubqYMw"
+                  />
+                </td>
+                <td>
+                  <a href="#">Remove</a>
+                </td>
+                <td></td>
+              </tbody>
+            </table>
+            <button type="button">Add another link</button> <br />
+            <button type="button">Cancel</button>
+            <button type="submit">Save Profile</button><br />
+            <button type="button">Edit Profile</button>
+            <button type="submit">Cancel Editing</button><br />
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
