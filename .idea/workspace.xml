@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caf407d7-6bb2-4985-be4e-3a1aa5a86eaa" name="Changes" comment="" />
+    <list default="true" id="caf407d7-6bb2-4985-be4e-3a1aa5a86eaa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/public/kanbas/home/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/kanbas/home/courses.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +24,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Vaishnavi/Masters/Web Development 5600/webdevassignments/2023/fall/webdev/kanbas-react-web-app",
+    "last_opened_file_path": "D:/Vaishnavi/ARTF 2224",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -38,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695078008372</updated>
       <workItem from="1695078009478" duration="121000" />
+      <workItem from="1695595115676" duration="28000" />
     </task>
     <servers />
   </component>
