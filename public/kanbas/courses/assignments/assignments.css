@@ -62,8 +62,11 @@
  }
  
  .wd-scrollable {
-     /* overflow-x: hidden; */
- }
+    height: 100vh;
+    width: 100%;
+    overflow-y: initial;
+    overflow-x: hidden;
+  }
  
  
  .account-header{
@@ -267,4 +270,13 @@
     color: #D41B2C;
     cursor: pointer;
     margin: 0 auto;
+}
+
+
+.wd-custom-font {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

@@ -30,9 +30,6 @@
     position: relative;
 }
 
-.wd-scrollable {
-    /* overflow-x: hidden; */
-}
 
 
 .account-header{
@@ -110,10 +107,6 @@
 
 .wd-margin-divider {
    margin-top: 20px;
-}
-
-.cab {
-  
 }
 
 

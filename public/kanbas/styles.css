@@ -291,14 +291,14 @@ a {
     cursor: pointer;
 }
 
-.wd-main-navbar-content{
+.wd-navbar-content{
     width: 85px;
     height: 100vh;
     background: black;    
     overflow-y: scroll;
 }
 
-.wd-main-navbar-item-container{
+.wd-navbar-item-container{
     width: 100%;
     text-align: center;
     display: flex;
@@ -325,39 +325,37 @@ a {
     color: grey;
 }
 
-/* This maintains the aspect ratio of the image */
+
 .wd-logo-container img {
     width: 100%;
     height: auto;
 }
 
-.wd-navbar-item-icon{
+.wd-nav-item-icon{
     font-size: 1.75rem;
     color: #D41B2C;
 }
 
-.white {
+.wd-white {
     color: white;
 }
 
-.red {
+.wd-red {
     color: D41B2C;
 }
 
-.wd-navbar-item-text {
+.wd-nav-item-text {
     margin: 0.5rem 0;
     font-size: 0.85rem;
 }
 
-.grey{
+.wd-wd-nav-item-text{
     color: grey;
 }
 
-/* Navbar hiding on smaller screens */
 @media (max-width: 768px) {
-    .navbar-content {
+    .wd-navbar-content {
         display: none;
     }
 }
 
-/* Navbar Styles End  */

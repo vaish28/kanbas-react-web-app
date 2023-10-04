@@ -2,6 +2,10 @@
     display:flex;
  }
  
+ body {
+
+    overflow-x: initial;
+  }
  
  .wd-account-main-page {
      width: 190vh;

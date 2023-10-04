@@ -12,25 +12,78 @@
 </head>
 <body>
   <div class="wd-main-account-container">
-    <div class="wd-main-navbar-content">
-
-      <div class="wd-main-navbar-item-container">
-        <a class="wd-main-navbar-link kanbas-app-logo" href="index.html"></a>
+    <div class="wd-navbar-content">
+      <div class="wd-logo-container wd-navbar-item-container">
+        <a class="wd-navbar-link" href="index.html">
+          <image
+            src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+            alt="Logo"
+          />
+        </a>
       </div>
-      <ul class="wd-kanbas-navigation">
-        <li class="wd-active"><a href="index.html"> <i class="fa-regular fa-circle-user wd-nav-item-icon white "></i><p>Account</p></a></li>
-        <li><a href="#">  <i class="fa-solid fa-gauge wd-nav-item-icon"></i><p>Dashboard</p></a></li>
-        <li ><a href="../index.html"> <i class="fa-solid fa-book wd-nav-item-icon"></i><p>Courses</p></a></li>
-        <li><a href="#"><i class="fa-solid fa-calendar-days wd-nav-item-icon"></i><p>Calendar</p></a></li>
-        <li><a href="#"><i class="fa-solid fa-inbox wd-nav-item-icon"></i><p>Inbox</p></a></li>
-        <li><a href="#"><i class="fa-regular fa-clock wd-nav-item-icon"></i><p>History</p></a></li>
-        <li><a href="#"><i class="fa-solid fa-tv wd-nav-item-icon"></i><p>Studio</p></a></li>
-        <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket wd-nav-item-icon"></i><p>Commons</p></a></li>
-        <li><a href="#"><i class="fa-regular fa-circle-question wd-nav-item-icon"></i><p>Help</p></a></li>
-      </ul>
+      <!-- Add class navbar-item-active to the item that is active  -->
+      <div class="wd-nav-account wd-navbar-item-container">
+        <a href="../index.html">
+          <i class="fa-regular fa-circle-user wd-nav-item-icon wd-white"></i>
+          <p class="wd-nav-item-text">Account</p>
+        </a>
+      </div>
+      <div class="wd-nav-dashboard wd-navbar-item-container">
+        <a href="../../dashboard/index.html">
+          <i class="fa-solid fa-gauge wd-nav-item-icon"></i>
+          <p class="wd-nav-item-text">Dashboard</p>
+        </a>
+      </div>
+      <div class="wd-nav-courses wd-navbar-item-container">
+        <a href="../../courses/index.html">
+          <i class="fa-solid fa-book wd-nav-item-icon"></i>
+          <p class="wd-nav-item-text">Courses</p>
+        </a>
+      </div>
+      <div class="wd-nav-calendar wd-navbar-item-container">
+        <a href="#">
+          <i class="fa-solid fa-calendar-days wd-nav-item-icon"></i>
+    
+          <p class="wd-nav-item-text">Calendar</p>
+        </a>
+      </div>
+      <div class="wd-nav-inbox wd-navbar-item-container">
+        <a href="#">
+          <i class="fa-solid fa-inbox wd-nav-item-icon"></i>
+    
+          <p class="wd-nav-item-text">Inbox</p>
+        </a>
+      </div>
+      <div class="wd-nav-history wd-navbar-item-container">
+        <a href="#">
+          <i class="fa-regular fa-clock wd-nav-item-icon"></i>
+    
+          <p class="wd-nav-item-text">History</p>
+        </a>
+      </div>
+      <div class="wd-nav-studio wd-navbar-item-container">
+        <a href="#">
+          <i class="fa-solid fa-tv wd-nav-item-icon"></i>
+    
+          <p class="wd-nav-item-text">Studio</p>
+        </a>
+      </div>
+      <div class="wd-nav-commons wd-navbar-item-container">
+        <a href="#">
+          <i class="fa-solid fa-arrow-right-from-bracket wd-nav-item-icon"></i>
+    
+          <p class="wd-nav-item-text">Commons</p>
+        </a>
+      </div>
+      <div class="wd-nav-help wd-navbar-item-container">
+        <a href="#">
+          <i class="fa-regular fa-circle-question wd-nav-item-icon"></i>
+          <p class="wd-nav-item-text">Help</p>
+        </a>
+      </div>
     </div>
 
-    <div class="wd-scrollable">
+    <div class="wd-scrollable" style="overflow-x: hidden;">
       <div class="wd-account-main-page">
         <div class="container-fluid">
           <div class="row account-header">
@@ -41,7 +94,7 @@
             </div>
 
             <div class = "col col-sm-11  wd-profile-name-text" >
-                Jose Annunziato's Profile
+                Vaishnavi Madhekar's Profile
             </div>
           </div>
 
@@ -59,7 +112,7 @@
           <div class="wd-navigation-element"> <a href="#">Notifications</a></div>
           <div class="wd-navigation-element wd-navigation-element-active"><a href="index.html">Profile</a></div>
           <div class="wd-navigation-element"><a href="#">Files</a></div>
-          <div class="wd-navigation-element"><a href="#">Settings</a></div>
+          <div class="wd-navigation-element"><a href="../../courses/settings/coursedetails.html">Settings</a></div>
           <div class="wd-navigation-element"><a href="#">ePortfolios</a></div>
           <div class="wd-navigation-element"><a href="#">Shared Content</a></div>
           <div class="wd-navigation-element"><a href="#">The Hub</a></div>
@@ -142,7 +195,9 @@
                 </table>
                 <button class="btn btn-sm" style="background-color: #f5f5f5">Add another link</button>
                   <hr>
-                  <button type="submit" class="btn btn-danger" style="float: right">Save Profile</button><button class="btn btn-light" style="float: right">Cancel</button>
+                  <a href="../index.html">
+                  <button type="submit" class="btn btn-danger" style="float: right">Save Profile</button></a>
+                  <a href="../index.html"><button type="submit" class = "btn btn-light" style="float: right">Cancel</button></a>
               </div>
           </div>
       </div>
