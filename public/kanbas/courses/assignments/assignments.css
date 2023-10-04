@@ -123,7 +123,6 @@
     color: grey;
  }
  
- /*test*/
  .wd-edit-profile-action-button{
      background-color: lightgrey;
      border: 1px solid lightgrey;
@@ -151,9 +150,7 @@
     
         width: 100%;
         min-height: 100vh;
-        padding: 1rem 0 1rem 2rem;
-        
-    
+        padding: 1rem 0 1rem 2rem;  
  }
  
  .wd-account-title {
@@ -172,14 +169,7 @@
  .wd-pointer {
      cursor: pointer;
  }
- .wd-custom-breadcrumb {
-    font-size: 1.5em;
-}
 
-.wd-custom-breadcrumb ol li a{
-    text-decoration: none;
-    color: red; 
-}
 
  .wd-margin-divider {
     margin-top: 20px;
@@ -221,4 +211,60 @@
 
 .assignment-completed {
     border-left: 3px  green;
+}
+
+
+.ma-20{
+    margin: 1rem 0;
+}
+
+
+.wd-custom-decoration-text-link {
+    text-decoration: none;
+}
+
+
+.wd-done-border{
+    border-left: 7px solid green !important;
+}
+
+.wd-indent-course-buttons{
+    margin: 0 0.25rem;
+}
+
+
+.wd-custom-padding {
+    padding-bottom: 5vh !important;
+}
+
+
+.wd-course-home-buttons {
+    margin: 0 0.25rem;
+}
+
+.wd-custom-breadcrumb-active {
+    font-size: 1.175rem;
+    text-decoration: none;
+    padding-left: 5px;
+    position: relative;
+    color: rgba(77, 77, 77, 0.96);
+    font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.wd-custom-breadcrumb ol li a{
+    color: red;
+    font-size: 1.175rem;
+    text-decoration: none;
+    font-weight: 300;
+    padding-left: 5px;
+    position: relative;
+    font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wd-custom-hamburger::before {
+    font-size: 1.8rem;
+    color: #D41B2C;
+    cursor: pointer;
+    margin: 0 auto;
 }

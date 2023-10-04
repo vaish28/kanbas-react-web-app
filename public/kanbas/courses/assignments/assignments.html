@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="assignments.css"/>
-  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="../../styles.css"/>
   <link
   href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
   rel="stylesheet"
@@ -93,27 +93,27 @@
 			<div class="container-fluid">
 				<div class="row account-header">
 					<div class="col col-sm-1">
-						<i class="fa-solid fa-bars custom-hamburger"></i>
+						<i class="fa-solid fa-bars wd-custom-hamburger"></i>
 					</div>
-					<div class="col col-sm-11 custom-breadcrumb">
+					<div class="col col-sm-11 wd-custom-breadcrumb">
 						<nav
-							style="--bs-breadcrumb-divider: '>'"
-							aria-label="breadcrumb"
+						  style="--bs-breadcrumb-divider: '>'"
+						  aria-label="breadcrumb"
 						>
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item red">
-									<a href="#">CS5610.12631.202410</a>
-								</li>
-								<li class="breadcrumb-item active" aria-current="page">
-									Assignments
-								</li>
-							</ol>
+						  <ol class="breadcrumb wd-red">
+							<li class="breadcrumb-item ">
+							  <a href="#">CS5610.12631.202410</a>
+							</li>
+							<li class="breadcrumb-item wd-custom-breadcrumb-active" aria-current="page">
+							  Home
+							</li>
+						  </ol>
 						</nav>
-					</div>
+					  </div>
 				</div>
 
 				<div class="row">
-					<hr class="wd-custom-divider" />
+					<hr class="wd-custom-divider wd-margin-divider" />
 				</div>
 				<div class="row">
 					<div class="col col-sm-2">
@@ -169,7 +169,13 @@
 							  <p class="wd-navigation-element-title">People</p>
 							</a>
 						  </div>
-		
+
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Discussions</p>
+							</a>
+						  </div>
+
 						  <div class="wd-navigation-element">
 							<a href="#">
 							  <p class="wd-navigation-element-title">
@@ -179,22 +185,70 @@
 							</a>
 						  </div>
 		
+
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Pages</p>
+							</a>
+						  </div>
+
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Files</p>
+							</a>
+						  </div>
+
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Rubrics</p>
+							</a>
+						  </div>
+
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Outcomes</p>
+							</a>
+						  </div>
+
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Collaborations
+
+							  </p>
+							</a>
+						  </div>
+				
+						  
+						  <div class="wd-navigation-element">
+							<a href="#">
+							  <p class="wd-navigation-element-title">Syllabus
+							  </p>
+							</a>
+						  </div>
 						  <div class="wd-navigation-element">
 							<a href="#">
 							  <p class="wd-navigation-element-title">Settings</p>
 							</a>
 						  </div>
+
+
 						</div>
 					  </div>
-					<div class="col col-sm-10 container-fluid">
-						<div class="row container">
-							<div class="col-12 p-0">
+
+
+					<div class="col col-sm-9 container-fluid">
+						<div class="row">
+							<div class="col col-sm-8 p-0 " >
 								<input
 								  type="email"
 								  class="form-control w-25 inline"
 								  id="exampleFormControlInput1"
 								  placeholder="Search for Assignment"
+								  style="width:60vh !important;"
 								/>
+							
+							  </div>
+							  <div class="col col-sm-4">
 								<button
 								  type="button"
 								  class="btn btn-secondary float-end cab inline"
@@ -226,23 +280,26 @@
 						  <div class="row">
 							<ul class="list-group module-group">
 								<li class="list-group-item list-group-item-secondary">
+									
 									<i class="fa-solid fa-caret-down"></i> Assignments
 									<i
-										class="fa-solid fa-ellipsis-vertical black float-end ma-050"
+										class="fa-solid fa-ellipsis-vertical black float-end ma-050 wd-indent-course-buttons"
 									></i>
-									<i class="fa-solid fa-plus grey float-end ma-050"></i>
+									<i class="fa-solid fa-plus grey float-end ma-050 wd-indent-course-buttons"></i>
 
-									<div class="rounded-5 float-end ps-2 pe-2">
-										<p class="m-0 p-0">40 % of total</p>
-									</div>
+									<button type="button" class="btn btn-outline-secondary float-end wd-indent-course-buttons">40% of total</button>
 								</li>
-								<li class="list-group-item assignment-completed container-fluid p-0 m-0">
+								<li class="list-group-item wd-done-border container-fluid p-0 m-0">
 									<div class="row p-0 m-0 align-items-center">
+										
 										<div class="col-1 p-0 m-0 text-center">
+											<i class="fas fa-grip-vertical wd-course-home-buttons"></i>
 											<i class="fa-solid fa-book wd-green ps-2"></i>
 										</div>
 										<div class="col-10 p-0 m-0 pt-2 pb-2">
+											
 											<div class="assignment-desc">
+												
 												<strong>A1 SETUP</strong>
 												<p class="p-0 m-0">
 													Week 0 - SETUP - Week Starting on Sept 5th Module
@@ -254,18 +311,19 @@
 											</div>
 										</div>
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-check-circle wd-green"></i>
+											<i class="fa-solid fa-check-circle wd-green wd-indent-course-buttons"></i>
 
 											<i
-												class="fa-solid fa-ellipsis-vertical black ma-050"
+												class="fa-solid fa-ellipsis-vertical black ma-050 wd-indent-course-buttons"
 											></i>
 										</div>
 									</div>
 								</li>
 
-								<li class="list-group-item assignment-completed container-fluid p-0 m-0">
+								<li class="list-group-item wd-done-border container-fluid p-0 m-0">
 									<div class="row p-0 m-0 align-items-center">
 										<div class="col-1 p-0 m-0 text-center">
+											<i class="fas fa-grip-vertical wd-course-home-buttons"></i>
 											<i class="fa-solid fa-book wd-green ps-2"></i>
 										</div>
 										<div class="col-10 p-0 m-0 pt-2 pb-2">
@@ -281,17 +339,18 @@
 											</div>
 										</div>
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-check-circle wd-green"></i>
+											<i class="fa-solid fa-check-circle wd-green wd-indent-course-buttons"></i>
 
 											<i
-												class="fa-solid fa-ellipsis-vertical black ma-050"
+												class="fa-solid fa-ellipsis-vertical black ma-050 wd-indent-course-buttons"
 											></i>
 										</div>
 									</div>
 								</li>
-								<li class="list-group-item assignment-completed container-fluid p-0 m-0">
+								<li class="list-group-item wd-done-border container-fluid p-0 m-0">
 									<div class="row p-0 m-0 align-items-center">
 										<div class="col-1 p-0 m-0 text-center">
+											<i class="fas fa-grip-vertical wd-course-home-buttons"></i>
 											<i class="fa-solid fa-book wd-green ps-2"></i>
 										</div>
 										<div class="col-10 p-0 m-0 pt-2 pb-2">
@@ -307,17 +366,18 @@
 											</div>
 										</div>
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-check-circle wd-green"></i>
+											<i class="fa-solid fa-check-circle wd-green wd-indent-course-buttons"></i>
 
 											<i
-												class="fa-solid fa-ellipsis-vertical black ma-050"
+												class="fa-solid fa-ellipsis-vertical black ma-050 wd-indent-course-buttons" 
 											></i>
 										</div>
 									</div>
 								</li>
-								<li class="list-group-item assignment-completed container-fluid p-0 m-0">
+								<li class="list-group-item wd-done-border container-fluid p-0 m-0">
 									<div class="row p-0 m-0 align-items-center">
 										<div class="col-1 p-0 m-0 text-center">
+											<i class="fas fa-grip-vertical wd-course-home-buttons"></i>
 											<i class="fa-solid fa-book wd-green ps-2"></i>
 										</div>
 										<div class="col-10 p-0 m-0 pt-2 pb-2">
@@ -333,17 +393,18 @@
 											</div>
 										</div>
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-check-circle wd-green"></i>
+											<i class="fa-solid fa-check-circle wd-green wd-indent-course-buttons"></i>
 
 											<i
-												class="fa-solid fa-ellipsis-vertical black ma-050"
+												class="fa-solid fa-ellipsis-vertical black ma-050 wd-indent-course-buttons"
 											></i>
 										</div>
 									</div>
 								</li>
-								<li class="list-group-item assignment-completed container-fluid p-0 m-0">
+								<li class="list-group-item wd-done-border container-fluid p-0 m-0">
 									<div class="row p-0 m-0 align-items-center">
 										<div class="col-1 p-0 m-0 text-center">
+											<i class="fas fa-grip-vertical wd-course-home-buttons"></i>
 											<i class="fa-solid fa-book wd-green ps-2"></i>
 										</div>
 										<div class="col-10 p-0 m-0 pt-2 pb-2">
@@ -359,18 +420,19 @@
 											</div>
 										</div>
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-check-circle wd-green"></i>
+											<i class="fa-solid fa-check-circle wd-green wd-indent-course-buttons"></i>
 
 											<i
-												class="fa-solid fa-ellipsis-vertical black ma-050"
+												class="fa-solid fa-ellipsis-vertical black ma-050 wd-indent-course-buttons"
 											></i>
 										</div>
 									</div>
 								</li>
-								<li class="list-group-item assignment-completed container-fluid p-0 m-0">
+								<li class="list-group-item wd-done-border container-fluid p-0 m-0">
 									<div class="row p-0 m-0 align-items-center">
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-book wd-green ps-2"></i>
+											<i class="fas fa-grip-vertical wd-course-home-buttons"></i>
+											<i class="fa-solid fa-book wd-green ps-2 "></i>
 										</div>
 										<div class="col-10 p-0 m-0 pt-2 pb-2">
 											<div class="assignment-desc">
@@ -385,10 +447,10 @@
 											</div>
 										</div>
 										<div class="col-1 p-0 m-0 text-center">
-											<i class="fa-solid fa-check-circle wd-green"></i>
+											<i class="fa-solid fa-check-circle wd-green wd-indent-course-buttons"></i>
 
 											<i
-												class="fa-solid fa-ellipsis-vertical black ma-050"
+												class="fa-solid fa-ellipsis-vertical black ma-050 wd-indent-course-buttons"
 											></i>
 										</div>
 									</div>

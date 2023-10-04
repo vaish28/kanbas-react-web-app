@@ -1,9 +1,15 @@
+.wd-main-navbar-content {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 85px;
+}
+
 .wd-kanbas-navigation{
     background-color: black;
     list-style: None;
     padding: 0px;
     width: 85px;
-    height: 10ovh;
 }
 
 .kanbas-app-logo{
@@ -15,10 +21,13 @@
     background-size: contain;
     transition: transform .3s;
     height: 75px;
-        }
+    padding: 0.5rem 0;
+    margin: 5px;
+    width: 60px;
+}
 
 .wd-kanbas-navigation li{
-    width: 100%;
+    width: 60%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -38,6 +47,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body * {
@@ -106,9 +116,12 @@ body * {
 
  }
  .wd-main-navbar-content{
-    width: 85px;
-    height: 100vh;
     background: black;
+}
+
+.wd-main-navbar-item-container {
+    display: block;
+    justify-content: center;
 }
 
  .wd-main-navbar-item-container img {
