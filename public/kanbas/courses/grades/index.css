@@ -60,11 +60,7 @@
      padding-left: 5px;
      position: relative;
  }
- 
- .wd-scrollable {
-     /* overflow-x: hidden; */
- }
- 
+
  
  .account-header{
      margin: 0.5rem 0 1rem 0;
@@ -617,4 +613,8 @@ th{
     margin: 10px;
     display: inline !important;
     width: 80px !important;
+}
+
+.wd-grey {
+    color:grey;
 }
