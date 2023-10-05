@@ -18,7 +18,12 @@
     background-color: lightgrey !important;
 }
 
-
 .grey {
     color: grey;
+}
+
+.wd-account-navigation-active .wd-navigation-element-title {
+    padding-left: 8px;
+    border-left: 2px solid black;
+    color: black;
 }

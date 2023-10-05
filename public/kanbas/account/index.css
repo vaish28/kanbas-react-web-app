@@ -65,10 +65,7 @@
      position: relative;
  }
  
- .wd-scrollable {
-     /* overflow-x: hidden; */
- }
- 
+
  
  .account-header{
      margin: 0.5rem 0 1rem 0;
@@ -160,4 +157,10 @@
  .wd-pointer {
      cursor: pointer;
  }
+
+ .wd-account-navigation-active .wd-navigation-element-title {
+    padding-left: 8px;
+    border-left: 2px solid black;
+    color: black;
+}
  

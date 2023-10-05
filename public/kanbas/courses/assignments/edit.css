@@ -242,3 +242,8 @@
 .wd-course-action-buttons-custom{
     padding: 5px;
 }
+.wd-account-navigation-active .wd-navigation-element-title {
+    padding-left: 8px;
+    border-left: 2px solid black;
+    color: black;
+}

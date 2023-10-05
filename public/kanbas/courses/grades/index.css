@@ -618,3 +618,9 @@ th{
 .wd-grey {
     color:grey;
 }
+
+.wd-account-navigation-active .wd-navigation-element-title {
+    padding-left: 8px;
+    border-left: 2px solid black;
+    color: black;
+}
