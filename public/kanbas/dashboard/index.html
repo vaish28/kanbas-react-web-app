@@ -1,530 +1,935 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="../styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet"/>
-    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kanbas</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+		<link href="index.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="navbar-content">
+				<div class="logo-container navbar-item-container">
+					<a class="navbar-link" href="../index.html">
+						<image
+							src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+							alt="Logo"
+						/>
+					</a>
+				</div>
+				<!-- Add class navbar-item-active to the item that is active  -->
+				<div class="nav-account navbar-item-container">
+					<a href="../account/">
+						<i class="fa-regular fa-circle-user nav-item-icon white"></i>
+						<p class="nav-item-text">Account</p>
+					</a>
+				</div>
+				<div class="nav-dashboard navbar-item-container navbar-item-active">
+					<a href="../../dashboard/">
+						<i class="fa-solid fa-gauge nav-item-icon"></i>
+						<p class="nav-item-text">Dashboard</p>
+					</a>
+				</div>
+				<div class="nav-courses navbar-item-container">
+					<a href="../courses/">
+						<i class="fa-solid fa-book nav-item-icon"></i>
+						<p class="nav-item-text">Courses</p>
+					</a>
+				</div>
+				<div class="nav-calendar navbar-item-container">
+					<a href="#">
+						<i class="fa-solid fa-calendar-days nav-item-icon"></i>
 
-</head>
-<body>
-    <div class="wd-main-dashboard-container">
-        <div class="wd-navbar-content">
-            <div class="wd-logo-container wd-navbar-item-container">
-              <a class="wd-navbar-link" href="index.html">
-                <image
-                  src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
-                  alt="Logo"
-                />
-              </a>
-            </div>
-    
-            <div class="wd-nav-account wd-navbar-item-container">
-              <a href="../account">
-                <i class="fa-regular fa-circle-user wd-nav-item-icon"></i>
-                <p class="wd-nav-item-text">Account</p>
-              </a>
-            </div>
-          
-            <div class="wd-nav-courses wd-navbar-item-container navbar-item-active">
-                <a href="../dashboard">
-                  <i class="fa-solid fa-gauge wd-nav-item-icon wd-red"></i>
-                  <p class="wd-nav-item-text">Dashboard</p>
-                </a>
-              </div>
-            <div class="wd-nav-courses wd-navbar-item-container">
-              <a href="../courses/index.html">
-                <i class="fa-solid fa-book wd-nav-item-icon"></i>
-                <p class="wd-nav-item-text">Courses</p>
-              </a>
-            </div>
-            <div class="wd-nav-calendar wd-navbar-item-container">
-              <a href="#">
-                <i class="fa-solid fa-calendar-days wd-nav-item-icon"></i>
-          
-                <p class="wd-nav-item-text">Calendar</p>
-              </a>
-            </div>
-            <div class="wd-nav-inbox wd-navbar-item-container">
-              <a href="#">
-                <i class="fa-solid fa-inbox wd-nav-item-icon"></i>
-          
-                <p class="wd-nav-item-text">Inbox</p>
-              </a>
-            </div>
-            <div class="wd-nav-history wd-navbar-item-container">
-              <a href="#">
-                <i class="fa-regular fa-clock wd-nav-item-icon"></i>
-          
-                <p class="wd-nav-item-text">History</p>
-              </a>
-            </div>
-            <div class="wd-nav-studio wd-navbar-item-container">
-              <a href="#">
-                <i class="fa-solid fa-tv wd-nav-item-icon"></i>
-          
-                <p class="wd-nav-item-text">Studio</p>
-              </a>
-            </div>
-            <div class="wd-nav-commons wd-navbar-item-container">
-              <a href="#">
-                <i class="fa-solid fa-arrow-right-from-bracket wd-nav-item-icon"></i>
-          
-                <p class="wd-nav-item-text">Commons</p>
-              </a>
-            </div>
-            <div class="wd-nav-help wd-navbar-item-container">
-              <a href="#">
-                <i class="fa-regular fa-circle-question wd-nav-item-icon"></i>
-                <p class="wd-nav-item-text">Help</p>
-              </a>
-            </div>
-          </div>
-          <div class="wd-scrollable" style="overflow-x:hidden ;">
-            <div class="wd-dashboard-main-page">
-                <div class="container-fluid">
-                    <div class="row dashboard-header">
-                        <div class="col col-sm-4 wd-dashboard-custom-header">
-                            Dashboard
-                        </div>
+						<p class="nav-item-text">Calendar</p>
+					</a>
+				</div>
+				<div class="nav-inbox navbar-item-container">
+					<a href="#">
+						<i class="fa-solid fa-inbox nav-item-icon"></i>
 
-                    </div>
-                    <div class="row">
-                        <hr class="wd-custom-divider-dashboard">
-                    </div>
-                    <div class="wd-main-dashboard container-fluid">
-                        <div class="row">
-                            <h3 class="wd-dashboard-sub-header">Published Courses(24)</h3>
-                        </div>
-                        <div class="row"><hr class="wd-custom-divider-dashboard"></div>
-                        <div class="row">
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></h6>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" sclass="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mb-3 mt-3">
-                                <div class="card wd-dashboard-course-card">
-                                    <div class="wd-card-image-container">
-                                        <div class="float-end">
-                                            <div class="wd-course-card-ellipses">
-                                                <i class="fa-solid fa-ellipsis-vertical wd-white course-edit-icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title wd-card-header"><a href="../courses/" class="wd-custom-text-card">CS5610 126 Web Development<span class="wd-red">...</span></a></p>
-                                        <p class="card-subtitle text-body-secondary wd-custom-text-grey">CS5610.12631.202410</p>
-                                        <p class="card-text wd-card-text">202410_1 Fall 2023 Semester</p>
-                                        <svg viewBox="0 0 1920 1920" width="5em" height="5em" aria-hidden="true" role="presentation" focusable="false" class="dUOHu_bGBk dUOHu_drOs dUOHu_eXrk cGqzL_bGBk cGqzL_dIzR cGqzL_owrh" style="width: 2em; height: 1.5em;"><g role="presentation"><path d="M1468.2137,0 L1468.2137,564.697578 L1355.27419,564.697578 L1355.27419,112.939516 L112.939516,112.939516 L112.939516,1807.03225 L1355.27419,1807.03225 L1355.27419,1581.15322 L1468.2137,1581.15322 L1468.2137,1919.97177 L2.5243549e-29,1919.97177 L2.5243549e-29,0 L1468.2137,0 Z M1597.64239,581.310981 C1619.77853,559.174836 1655.46742,559.174836 1677.60356,581.310981 L1677.60356,581.310981 L1903.4826,807.190012 C1925.5058,829.213217 1925.5058,864.902104 1903.4826,887.038249 L1903.4826,887.038249 L1225.8455,1564.67534 C1215.22919,1575.17872 1200.88587,1581.16451 1185.86491,1581.16451 L1185.86491,1581.16451 L959.985883,1581.16451 C928.814576,1581.16451 903.516125,1555.86606 903.516125,1524.69475 L903.516125,1524.69475 L903.516125,1298.81572 C903.516125,1283.79477 909.501919,1269.45145 920.005294,1258.94807 L920.005294,1258.94807 Z M1442.35055,896.29929 L1016.45564,1322.1942 L1016.45564,1468.225 L1162.48643,1468.225 L1588.38135,1042.33008 L1442.35055,896.29929 Z M677.637094,1242.34597 L677.637094,1355.28548 L338.818547,1355.28548 L338.818547,1242.34597 L677.637094,1242.34597 Z M903.516125,1016.46693 L903.516125,1129.40645 L338.818547,1129.40645 L338.818547,1016.46693 L903.516125,1016.46693 Z M1637.62298,701.026867 L1522.19879,816.451052 L1668.22958,962.481846 L1783.65377,847.057661 L1637.62298,701.026867 Z M1129.39516,338.829841 L1129.39516,790.587903 L338.818547,790.587903 L338.818547,338.829841 L1129.39516,338.829841 Z M1016.45564,451.769356 L451.758062,451.769356 L451.758062,677.648388 L1016.45564,677.648388 L1016.45564,451.769356 Z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-          
-</div>
+						<p class="nav-item-text">Inbox</p>
+					</a>
+				</div>
+				<div class="nav-history navbar-item-container">
+					<a href="#">
+						<i class="fa-regular fa-clock nav-item-icon"></i>
 
+						<p class="nav-item-text">History</p>
+					</a>
+				</div>
+				<div class="nav-studio navbar-item-container">
+					<a href="#">
+						<i class="fa-solid fa-tv nav-item-icon"></i>
 
+						<p class="nav-item-text">Studio</p>
+					</a>
+				</div>
+				<div class="nav-commons navbar-item-container">
+					<a href="#">
+						<i class="fa-solid fa-arrow-right-from-bracket nav-item-icon"></i>
 
+						<p class="nav-item-text">Commons</p>
+					</a>
+				</div>
+				<div class="nav-help navbar-item-container">
+					<a href="#">
+						<i class="fa-regular fa-circle-question nav-item-icon"></i>
 
-</body>
+						<p class="nav-item-text">Help</p>
+					</a>
+				</div>
+			</div>
+			<div class="scrollable">
+				<div class="main-page">
+					<div class="container-fluid">
+						<div class="row account-header">
+							<h1 class="main-header-text">Dashboard</h1>
+						</div>
+						<div class="row">
+							<hr class="custom-divider" />
+						</div>
+						<div class="main-content container-fluid">
+							<div class="row">
+								<h3 class="sub-header-text">Published Courses (24)</h3>
+							</div>
+							<div class="row">
+								<hr />
+							</div>
+							<div class="row">
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div
+									class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center mb-3 mt-3"
+								>
+									<a href="../courses/">
+										<div class="card course-card">
+											<div class="card-image-container">
+												<div class="float-end">
+													<div class="course-card-action">
+														<i
+															class="fa-solid fa-ellipsis-vertical white course-edit-icon"
+														></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h6 class="card-title blue pointer">
+													CS4550 126 Web Development
+													<span class="red">...</span>
+												</h6>
+												<p class="card-subtitle mb-2 text-body-secondary grey">
+													CS4550.12631.202410
+												</p>
+												<p class="card-text grey">
+													202410_1 Fall 2023 Semester
+												</p>
+												<i
+													class="fa-solid fa-file-pen course-edit-icon grey"
+												></i>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
-
-
-
