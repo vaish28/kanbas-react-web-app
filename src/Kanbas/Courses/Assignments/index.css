@@ -305,3 +305,8 @@ textarea {
         display: none;
     }
 }
+
+
+.wd-border-complete {
+    border-left: 7px solid green !important;
+}

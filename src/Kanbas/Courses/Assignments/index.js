@@ -64,7 +64,7 @@ function Assignments() {
 							<Link
 								key={index}
 								to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>
-								<li className='list-group-item done container-fluid p-0 m-0'>
+								<li className='list-group-item done container-fluid p-0 m-0 wd-border-complete'>
 									<div className='row p-0 m-0 align-items-center'>
 										<div className='col-1 p-0 m-0 text-center'>
 											<i className='fa-solid fa-book green ps-2'></i>
