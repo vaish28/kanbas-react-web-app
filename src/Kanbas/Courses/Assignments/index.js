@@ -43,7 +43,8 @@ function Assignments() {
 					</div>
 				</div>
 			</div>
-			<div className='row'>
+			
+			<div className='row' style={{marginTop: "5px"}}>
 				<hr className='custom-divider ma-10' />
 			</div>
 			<div className='row'>

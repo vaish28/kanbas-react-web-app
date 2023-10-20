@@ -34,7 +34,7 @@ function AssignmentEditor() {
 						<p className='m-1 p-0 green float-end'></p>
 						<button
 							type='button'
-							className='btn btn-outline-success green float-end published-button'>
+							className='btn btn-outline-success green float-end wd-published-button'>
 							<i className='fa-solid fa-circle-check green'></i>
 							Published
 						</button>
