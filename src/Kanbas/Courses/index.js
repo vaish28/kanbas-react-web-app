@@ -79,7 +79,7 @@ const Courses = () => {
 							{/* Home screen comes here  */}
 
 							<Routes>
-								{/* <Route path='/' element={<Navigate to='Home' />} /> */}
+								<Route path='/' element={<Navigate to='Home' />} />
 								<Route path='Home' element={<Home />} />
 								<Route path='Modules' element={<Modules />} />
 								<Route path='Assignments' element={<Assignments />} />
