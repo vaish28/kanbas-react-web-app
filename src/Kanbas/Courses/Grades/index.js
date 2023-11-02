@@ -1,11 +1,11 @@
 /** @format */
 
 import React from "react"
-
+import "./index.css"
 import db from "../../Database"
 import { useParams } from "react-router"
 
-import "./index.css"
+
 
 function Grades() {
 	const { courseId } = useParams()

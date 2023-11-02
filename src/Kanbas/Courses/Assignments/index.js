@@ -1,12 +1,12 @@
 /** @format */
 
 import React from "react"
-
+import db from "../../Database"
+import { Link } from "react-router-dom"
 import "./index.css"
 import { useParams } from "react-router"
 
-import db from "../../Database"
-import { Link } from "react-router-dom"
+
 
 function Assignments() {
 	const { courseId } = useParams()
@@ -26,20 +26,20 @@ function Assignments() {
 						<div className='float-end full-width'>
 							<button
 								type='button'
-								className='btn btn-light float-end cab inline'>
+								className='btn btn-light float-end wd-cab wd-inline'>
 								<i
 									style={{ fontSize: "1rem" }}
-									className='fa-solid fa-ellipsis-vertical black'></i>
+									className='fa-solid fa-ellipsis-vertical wd-black'></i>
 							</button>
 							<button
 								type='button'
-								className='btn btn-danger float-end cab inline'>
+								className='btn btn-danger float-end wd-cab wd-inline'>
 								<i className='fa-solid fa-plus white'></i> Assignment
 							</button>
 							<button
 								type='button'
-								className='btn btn-light float-end cab inline'>
-								<i className='fa-solid fa-plus black'></i> Group
+								className='btn btn-light float-end wd-cab wd-inline'>
+								<i className='fa-solid fa-plus wd-black'></i> Group
 							</button>
 						</div>
 					</div>
@@ -52,7 +52,7 @@ function Assignments() {
 				<ul className='list-group module-group'>
 					<li className='list-group-item list-group-item-secondary'>
 						<i className='fa-solid fa-caret-down mt-1'></i> Assignments
-						<i className='fa-solid fa-ellipsis-vertical black float-end ma-050'></i>
+						<i className='fa-solid fa-ellipsis-vertical wd-black float-end ma-050'></i>
 						<i className='fa-solid fa-plus grey float-end ma-050'></i>
 						<div className='rounded-5 float-end ps-2 pe-2'>
 							<p className='m-0 p-0'>40 % of total</p>
@@ -68,16 +68,14 @@ function Assignments() {
 								<li className='list-group-item done container-fluid p-0 m-0'>
 									<div className='row p-0 m-0 align-items-center'>
 										<div className='col-1 p-0 m-0 text-center'>
-											<i className='fa-solid fa-book green ps-2'></i>
+											<i className='fa-solid fa-book wd-green ps-2'></i>
 										</div>
 										<div className='col-10 p-0 m-0 pt-2 pb-2'>
 											<div className='assignment-desc'>
 												<strong className='assignment-title'>
 													{assignment?.title}
 												</strong>
-												{/* <p className='p-0 m-0'>
-												Week 0 - SETUP - Week Starting on Sept 5th Module
-											</p> */}
+												
 												<p className='p-0 m-0 mt-1 mb-1'>
 													<span className='red'>Multiple Modules</span> |{" "}
 													<strong>Due</strong> Sept 25, 2023 at 11:59pm | 100
@@ -86,8 +84,8 @@ function Assignments() {
 											</div>
 										</div>
 										<div className='col-1 p-0 m-0 text-center'>
-											<i className='fa-solid fa-check-circle green'></i>
-											<i className='fa-solid fa-ellipsis-vertical black ma-050'></i>
+											<i className='fa-solid fa-check-circle wd-green'></i>
+											<i className='fa-solid fa-ellipsis-vertical wd-black ma-050'></i>
 										</div>
 									</div>
 								</li>

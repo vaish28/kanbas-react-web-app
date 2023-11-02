@@ -52,5 +52,23 @@
 		"name": "Javascript and React",
 		"description": "Overview of javascript and introduction to react.",
 		"course": "CS4550"
+	},
+	{
+		"_id": "M401",
+		"name": "Introduction to Python and advanced concepts",
+		"description": "Overview of python and advanced concepts.",
+		"course": "DS2000"
+	},
+	{
+		"_id": "M402",
+		"name": "Numpy and Pandas",
+		"description": "Numpy and data cleaning",
+		"course": "DS2000"
+	},
+	{
+		"_id": "M402",
+		"name": "Introduction to Pandas",
+		"description": "Pandas and data cleaning",
+		"course": "DS2000"
 	}
 ]

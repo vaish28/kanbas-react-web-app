@@ -8,13 +8,12 @@ body {
 }
 
 
-/* Purposefully overrding Bootstrap  */
 .col {
     padding: 0;
 }
 
 
-/* Navbar Styles Start  */
+
 
 a {
     text-decoration: none;
@@ -55,7 +54,7 @@ a {
     color: grey;
 }
 
-/* This maintains the aspect ratio of the image */
+
 .logo-container img {
     width: 100%;
     height: auto;
@@ -83,9 +82,7 @@ a {
     color: grey;
 }
 
-/* Navbar Styles End  */
 
-/* Main Page styles Start  */
 
 .main-page {
     width: 100%;
@@ -108,7 +105,7 @@ a {
     margin: 0.5rem 0 1rem 0;
 }
 
-.custom-divider {
+.wd-custom-divider {
     height: 2px;
     background: grey;
 }
@@ -129,7 +126,7 @@ a {
     margin: 0.25rem;
 }
 
-/* Active Element  */
+
 .secondary-nav-active {
     border-left: 2px solid black;
     padding-left: 0.5rem;
@@ -194,11 +191,11 @@ a {
     font-size: 0.75rem;
 }
 
-.inline {
+.wd-inline {
     display: inline;
 }
 
-.green {
+.wd-green {
     color: green;
 }
 
@@ -214,7 +211,7 @@ a {
     font-size: 2rem;
 }
 
-.cab {
+.wd-cab {
     margin: 0 0.25rem;
 }
 
@@ -252,7 +249,7 @@ a {
     width: 100%;
 }
 
-.black {
+.wd-black {
     color: black;
 }
 
@@ -268,7 +265,7 @@ a {
     color: black;
 }
 
-.published-button {
+.wd-published-button {
     border: none;
 }
 
@@ -276,7 +273,7 @@ textarea {
     resize: none;
 }
 
-.assignment-edit-keys {
+.wd-assignment-edit-keys {
     text-align: right;
     align-items: start;
 }
@@ -295,7 +292,7 @@ textarea {
     width: 100% !important;
 }
 
-/* Navbar hiding on smaller screens */
+
 @media (max-width: 768px) {
     .navbar-content {
         display: none;

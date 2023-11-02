@@ -7,5 +7,8 @@
 	{ "_id": "A203", "title": "Design Patterns", "course": "CS5010" },
 	{ "_id": "A301", "title": "LLM's", "course": "CS6140" },
 	{ "_id": "A302", "title": "Neural Networks", "course": "CS6140" },
-	{ "_id": "A303", "title": "YOLO assignment", "course": "CS6140" }
+	{ "_id": "A303", "title": "YOLO assignment", "course": "CS6140" },
+	{ "_id": "A401", "title": "Python basics assignment", "course": "DS2000" },
+	{ "_id": "A402", "title": "Numpy assignment", "course": "DS2000" },
+	{ "_id": "A403", "title": "Pandas assignment", "course": "DS2000" }
 ]
