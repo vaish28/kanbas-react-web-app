@@ -23,7 +23,7 @@ function AssignmentEditor() {
 		<div className='col col-12  container-fluid'>
 			<div className='row container-fluid p-0 m-0'>
 				<div className='row p-0'>
-					<div className='col-12 p-0'>
+					<div className='col-12 p-0 mb-2'>
 						<button
 							type='button'
 							className='btn btn-light float-end cab inline'>
@@ -34,7 +34,7 @@ function AssignmentEditor() {
 						<p className='m-1 p-0 green float-end'></p>
 						<button
 							type='button'
-							className='btn btn-outline-success green float-end wd-published-button'>
+							className='btn btn-outline-success green float-end published-button'>
 							<i className='fa-solid fa-circle-check green'></i>
 							Published
 						</button>

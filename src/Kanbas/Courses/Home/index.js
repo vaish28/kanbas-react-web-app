@@ -12,7 +12,7 @@ const Home = () => {
 				<ModuleList />
 			</div>
 			<div className='col d-none d-xl-block col-lg-3'>
-				<div className='wd-course-actions'>
+				<div className='course-actions'>
 					<h5>Course Status</h5>
 					<div className='container-fluid mb-3'>
 						<div className='row'>

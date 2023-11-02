@@ -2,7 +2,15 @@
 
 import React from "react"
 
-const CourseCard = ({ name, number, startDate, endDate }) => {
+const CourseCard = ({
+	id,
+	name,
+	number,
+	startDate,
+	endDate,
+	setCourse,
+	deleteCourse,
+}) => {
 	return (
 		<div className='card course-card'>
 			<div className='card-image-container'>
@@ -19,7 +27,33 @@ const CourseCard = ({ name, number, startDate, endDate }) => {
 				<p className='card-text grey'>
 					{startDate} to {endDate}
 				</p>
-				<i className='fa-solid fa-file-pen course-edit-icon grey'></i>
+				<div className='float-end container'>
+					<button
+						type='button'
+						onClick={(event) => {
+							event.preventDefault()
+							setCourse({
+								...CourseCard,
+								_id: id,
+								name,
+								number,
+								startDate,
+								endDate,
+							})
+						}}
+						className='btn btn-warning m-2'>
+						Edit
+					</button>
+					<button
+						type='button'
+						onClick={(event) => {
+							event.preventDefault()
+							deleteCourse(id)
+						}}
+						className='btn btn-danger m-2'>
+						Delete
+					</button>
+				</div>
 			</div>
 		</div>
 	)

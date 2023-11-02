@@ -1,12 +1,58 @@
 /** @format */
 
-import React from "react"
+import React, { useState } from "react"
 import { useParams } from "react-router"
 import db from "../../Database"
 
+import { useSelector, useDispatch } from "react-redux"
+import {
+	addModule,
+	deleteModule,
+	updateModule,
+	setModule,
+} from "./ModulesReducer"
+
 const ModuleList = () => {
 	const { courseId } = useParams()
-	const modules = db.modules
+	// const [modules, setModules] = useState(db.modules)
+
+	// const [module, setModule] = useState({
+	// 	name: "",
+	// 	description: "",
+	// 	course: courseId,
+	// })
+
+	// const addModule = (module) => {
+	// 	setModules([
+	// 		...modules,
+	// 		{ ...module, _id: new Date().getTime().toString() },
+	// 	])
+	// 	setModule({
+	// 		name: "",
+	// 		description: "",
+	// 		course: courseId,
+	// 	})
+	// }
+
+	// const deleteModule = (moduleId) => {
+	// 	setModules(modules.filter((module) => module._id !== moduleId))
+	// }
+
+	// const updateModule = () => {
+	// 	setModules(
+	// 		modules.map((m) => {
+	// 			if (m._id === module._id) {
+	// 				return module
+	// 			} else {
+	// 				return m
+	// 			}
+	// 		})
+	// 	)
+	// }
+
+	const modules = useSelector((state) => state.modulesReducer.modules)
+	const module = useSelector((state) => state.modulesReducer.module)
+	const dispatch = useDispatch()
 
 	return (
 		<div className='row m-0 p-0'>
@@ -62,6 +108,62 @@ const ModuleList = () => {
 					<hr className='custom-divider ma-10' />
 				</div>
 				<div className='row'>
+					<div className='col-6'>
+						<h5>Add Module</h5>
+					</div>
+					<div className='col-6'>
+						<button
+							onClick={() => dispatch(updateModule(module))}
+							type='button'
+							className='btn btn-primary float-end ms-2 me-2'>
+							Update
+						</button>
+						<button
+							onClick={() =>
+								dispatch(addModule({ ...module, course: courseId }))
+							}
+							type='button'
+							className='btn btn-success float-end ms-2 me-2'>
+							Add
+						</button>{" "}
+					</div>
+
+					<div className='col-12'>
+						<div className='mb-3'>
+							<label for='exampleFormControlInput1' className='form-label'>
+								Module Name
+							</label>
+							<input
+								type='text'
+								className='form-control'
+								id='exampleFormControlInput1'
+								placeholder='New Module'
+								value={module.name}
+								onChange={(e) =>
+									dispatch(setModule({ ...module, name: e.target.value }))
+								}
+							/>
+						</div>
+						<div className='mb-3'>
+							<label for='exampleFormControlTextarea1' className='form-label'>
+								Module Description
+							</label>
+							<textarea
+								className='form-control'
+								placeholder='New description'
+								id='exampleFormControlTextarea1'
+								rows='3'
+								value={module.description}
+								onChange={(e) =>
+									dispatch(
+										setModule({ ...module, description: e.target.value })
+									)
+								}
+							/>
+						</div>
+					</div>
+				</div>
+				<div className='row'>
 					{modules
 						.filter((module) => module.course === courseId)
 						.map((module, index) => (
@@ -74,6 +176,22 @@ const ModuleList = () => {
 									<i className='fa-solid fa-plus grey float-end ma-050'></i>
 									<i className='fa-solid fa-caret-down float-end ma-050'></i>
 									<i className='fa-solid fa-check-circle green float-end'></i>
+									<button
+										type='button'
+										className='btn btn-success float-end ms-1 me-4 p-1'
+										onClick={(event) => {
+											dispatch(setModule(module))
+										}}>
+										{" "}
+										Edit
+									</button>
+									<button
+										type='button'
+										className='btn btn-danger float-end ms-1 me-2 p-1'
+										onClick={() => dispatch(deleteModule(module._id))}>
+										{" "}
+										Delete
+									</button>
 								</li>
 							</ul>
 						))}

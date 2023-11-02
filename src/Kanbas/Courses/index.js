@@ -14,11 +14,11 @@ import Assignments from "./Assignments"
 import AssignmentEditor from "./Assignments/AssignmentEditor"
 import Grades from "./Grades"
 
-const Courses = () => {
+const Courses = ({ courses }) => {
 	const { courseId } = useParams()
-	const { name, number, startDate, endDate } = db.courses.find(
-		(c) => c._id === courseId
-	)
+
+	const course = courses.find((course) => course._id === courseId)
+	const { name, number, startDate, endDate } = course
 
 	const { pathname } = useLocation()
 
@@ -87,7 +87,7 @@ const Courses = () => {
 									path='Assignments/:assignmentId'
 									element={<AssignmentEditor />}
 								/>
-								<Route path='Grades' element={<Grades/>} />
+								<Route path='Grades' element={<Grades />} />
 							</Routes>
 						</div>
 					</div>

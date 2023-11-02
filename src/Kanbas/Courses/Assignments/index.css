@@ -239,10 +239,10 @@ a {
 }
 
 .done {
-    border-left: 4px solid green;
+    border-left: 4px solid green !important;
 }
 
-.wd-course-actions {
+.course-actions {
     width: 100%;
     height: 100vh;
     padding: 1rem 0 1rem 2rem;
@@ -268,7 +268,7 @@ a {
     color: black;
 }
 
-.wd-published-button {
+.published-button {
     border: none;
 }
 
@@ -291,6 +291,10 @@ textarea {
     padding: 0.5rem;
 }
 
+.full-width {
+    width: 100% !important;
+}
+
 /* Navbar hiding on smaller screens */
 @media (max-width: 768px) {
     .navbar-content {
@@ -304,9 +308,4 @@ textarea {
     .account-header-divider {
         display: none;
     }
-}
-
-
-.wd-border-complete {
-    border-left: 7px solid green !important;
 }

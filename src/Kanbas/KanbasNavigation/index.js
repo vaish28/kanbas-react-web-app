@@ -79,7 +79,7 @@ const KanbasNavigation = () => {
 	]
 	const { pathname } = useLocation()
 	return (
-		<div className='wd-kanbas-navigation'>
+		<div className='kanbas-navigation'>
 			{/* Kanbas Logo  */}
 			<KanbasLogo />
 			{links.map((link, index) => (
