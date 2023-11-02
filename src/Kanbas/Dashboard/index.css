@@ -1,4 +1,4 @@
-/* Main Page styles Start  */
+
 
 .main-page {
     width: 100%;
@@ -59,7 +59,7 @@
     cursor: pointer;
 }
 
-/* Navbar hiding on smaller screens */
+
 @media (max-width: 500px) {
     .navbar-content {
         display: none;
