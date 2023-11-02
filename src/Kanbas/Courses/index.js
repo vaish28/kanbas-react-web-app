@@ -1,10 +1,7 @@
 /** @format */
 
 import React from "react"
-
-import db from "../Database"
 import { Navigate, Route, Routes, useLocation, useParams } from "react-router"
-
 import "./index.css"
 import CourseNavigation from "./CourseNavigation"
 import Home from "./Home"
@@ -76,8 +73,6 @@ const Courses = ({ courses }) => {
 							<CourseNavigation number={number} />
 						</div>
 						<div className='col-12 col-md-10 container-fluid'>
-							{/* Home screen comes here  */}
-
 							<Routes>
 								<Route path='/' element={<Navigate to='Home' />} />
 								<Route path='Home' element={<Home />} />

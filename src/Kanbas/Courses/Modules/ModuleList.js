@@ -14,41 +14,6 @@ import {
 
 const ModuleList = () => {
 	const { courseId } = useParams()
-	// const [modules, setModules] = useState(db.modules)
-
-	// const [module, setModule] = useState({
-	// 	name: "",
-	// 	description: "",
-	// 	course: courseId,
-	// })
-
-	// const addModule = (module) => {
-	// 	setModules([
-	// 		...modules,
-	// 		{ ...module, _id: new Date().getTime().toString() },
-	// 	])
-	// 	setModule({
-	// 		name: "",
-	// 		description: "",
-	// 		course: courseId,
-	// 	})
-	// }
-
-	// const deleteModule = (moduleId) => {
-	// 	setModules(modules.filter((module) => module._id !== moduleId))
-	// }
-
-	// const updateModule = () => {
-	// 	setModules(
-	// 		modules.map((m) => {
-	// 			if (m._id === module._id) {
-	// 				return module
-	// 			} else {
-	// 				return m
-	// 			}
-	// 		})
-	// 	)
-	// }
 
 	const modules = useSelector((state) => state.modulesReducer.modules)
 	const module = useSelector((state) => state.modulesReducer.module)

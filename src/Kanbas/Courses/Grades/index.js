@@ -23,7 +23,7 @@ function Grades() {
 					<div className='col-12 p-0'>
 						<button
 							type='button'
-							className='btn btn-light float-end cab inline'>
+							className='btn btn-light float-end wd-cab wd-inline'>
 							<i
 								style={{ fontSize: "1rem" }}
 								className='fa-solid fa-gear black'></i>
@@ -31,12 +31,12 @@ function Grades() {
 
 						<button
 							type='button'
-							className='btn btn-light float-end cab inline'>
+							className='btn btn-light float-end wd-cab wd-inline'>
 							<i className='fa-solid fa-file-export me-1'></i> Export
 						</button>
 						<button
 							type='button'
-							className='btn btn-light float-end cab inline'>
+							className='btn btn-light float-end wd-cab wd-inline'>
 							<i className='fa-solid fa-file-import black me-1'></i>
 							Import
 						</button>
@@ -44,11 +44,11 @@ function Grades() {
 				</div>
 			</div>
 			<div className='row'>
-				<div className='col-6 pe-2 relative'>
+				<div className='col-6 pe-2 wd-relative'>
 					<label for='student-names' className='form-label'>
 						<h4>Student Names</h4>
 					</label>
-					<div className='search-container relative m-0 p-0 ps-5 rounded-1'>
+					<div className='wd-search-container wd-relative m-0 p-0 ps-5 rounded-1'>
 						<i className='fa-solid fa-magnifying-glass search-icon-absolute'></i>
 						<select
 							className='form-select form-select-lg mb-3 search-input m-0'
@@ -64,7 +64,7 @@ function Grades() {
 					<label for='student-names' className='form-label'>
 						<h4>Assignment Names</h4>
 					</label>
-					<div className='search-container relative m-0 p-0 ps-5 rounded-1'>
+					<div className='search-container wd-relative m-0 p-0 ps-5 rounded-1'>
 						<i className='fa-solid fa-magnifying-glass search-icon-absolute'></i>
 						<select
 							className='form-select form-select-lg mb-3 search-input m-0'
@@ -79,7 +79,7 @@ function Grades() {
 			</div>
 			<div className='row m-0 mt-2 mb-2 p-0'>
 				<div className='col-4 m-0 p-0'>
-					<button type='button' className='btn btn-light cab inline m-0'>
+					<button type='button' className='btn btn-light wd-cab wd-inline m-0'>
 						<i className='fa-solid fa-filter'></i>
 						Apply Filters
 					</button>
@@ -121,7 +121,7 @@ function Grades() {
 								return (
 									<tr>
 										<td>
-											<p className='m-0 mb-1 p-0 ps-2 red'>
+											<p className='m-0 mb-1 p-0 ps-2 wd-red'>
 												{user.firstName} {user.lastName}
 											</p>
 										</td>

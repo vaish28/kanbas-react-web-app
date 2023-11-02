@@ -6,8 +6,6 @@
     width: 90px;
 }
 
-/* Navbar Styles  */
-
 .navbar-item-container {
     width: 100%;
     text-align: center;
@@ -26,7 +24,7 @@
     height: auto;
 }
 
-/* Nav Item Styles  */
+
 
 .NavItem {
     display: flex;
