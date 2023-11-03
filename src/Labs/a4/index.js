@@ -32,7 +32,6 @@ const Assignment4 = () => {
         <Counter/>
         <BooleanStateVariables />
         <StringStateVariables />
-        <ReduxExamples/>
         <DateStateVariable />
         <ObjectStateVariable />
         <ArrayStateVariable />
