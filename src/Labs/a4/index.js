@@ -24,10 +24,6 @@ const Assignment4 = () => {
     return(
       <>
         <h1>Assignment 4</h1>
-        <ReduxExamples/>
-
-        <br/>
-
         <Add a={1} b={2} />
         <ClickEvent />
         <PassingDataOnEvent/>
@@ -35,13 +31,18 @@ const Assignment4 = () => {
         <EventObject />
         <Counter/>
         <BooleanStateVariables />
-			<StringStateVariables />
+        <StringStateVariables />
+        <ReduxExamples/>
+        <DateStateVariable />
+        <ObjectStateVariable />
+        <ArrayStateVariable />
+        <ParentStateComponent />
+        <ChildStateComponent />
+
+      <br/>
       <ReduxExamples/>
-      <DateStateVariable />
-			<ObjectStateVariable />
-			<ArrayStateVariable />
-      <ParentStateComponent />
-      <ChildStateComponent />
+
+<br/>
 
       </>
     );
