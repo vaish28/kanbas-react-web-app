@@ -102,7 +102,7 @@ const ModuleList = () => {
 								type='text'
 								className='form-control'
 								id='exampleFormControlInput1'
-								placeholder='New Module'
+								placeholder='Module New'
 								value={module.name}
 								onChange={(e) =>
 									dispatch(setModule({ ...module, name: e.target.value }))
@@ -115,7 +115,7 @@ const ModuleList = () => {
 							</label>
 							<textarea
 								className='form-control'
-								placeholder='New description'
+								placeholder='Module Description'
 								id='exampleFormControlTextarea1'
 								rows='3'
 								value={module.description}
