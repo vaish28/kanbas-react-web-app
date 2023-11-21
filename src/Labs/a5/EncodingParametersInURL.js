@@ -6,6 +6,7 @@ import axios from "axios"
 function EncodingParametersInURLs() {
 	const [a, setA] = useState(34)
 	const [b, setB] = useState(23)
+	const [result, setResult] = useState(0)
 
 	const [welcome, setWelcome] = useState("")
 
@@ -16,7 +17,7 @@ function EncodingParametersInURLs() {
 		setWelcome(response.data)
 	}
 
-	const [result, setResult] = useState(0)
+
 	const fetchSum = async (a, b) => {
 		const response = await axios.get(
 			`${process.env.REACT_APP_BASE_URL}/a5/add/${a}/${b}`

@@ -1,5 +1,3 @@
-/** @format */
-
 import Dashboard from "./Dashboard"
 import KanbasNavigation from "./KanbasNavigation"
 import { Routes, Route, Navigate } from "react-router"

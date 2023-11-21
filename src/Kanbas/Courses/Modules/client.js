@@ -1,5 +1,3 @@
-/** @format */
-
 import axios from "axios"
 const COURSES_URL = `${process.env.REACT_APP_BASE_URL}/api/courses`
 
