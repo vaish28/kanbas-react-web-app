@@ -1,7 +1,10 @@
 /** @format */
 
-import React from "react"
+import React, { useEffect, useState } from "react"
+
+import db from "../Database"
 import { Navigate, Route, Routes, useLocation, useParams } from "react-router"
+
 import "./index.css"
 import CourseNavigation from "./CourseNavigation"
 import Home from "./Home"
@@ -11,10 +14,22 @@ import Assignments from "./Assignments"
 import AssignmentEditor from "./Assignments/AssignmentEditor"
 import Grades from "./Grades"
 
+import axios from "axios"
+
 const Courses = ({ courses }) => {
+	const URL = `${process.env.REACT_APP_BASE_URL}/api/courses`
+
 	const { courseId } = useParams()
 
-	const course = courses.find((course) => course._id === courseId)
+	const [course, setCourse] = useState({})
+	const findCourseById = async (courseId) => {
+		const response = await axios.get(`${URL}/${courseId}`)
+		setCourse(response.data)
+	}
+	useEffect(() => {
+		findCourseById(courseId)
+	}, [courseId])
+
 	const { name, number, startDate, endDate } = course
 
 	const { pathname } = useLocation()
@@ -73,6 +88,8 @@ const Courses = ({ courses }) => {
 							<CourseNavigation number={number} />
 						</div>
 						<div className='col-12 col-md-10 container-fluid'>
+							{/* Home screen comes here  */}
+
 							<Routes>
 								<Route path='/' element={<Navigate to='Home' />} />
 								<Route path='Home' element={<Home />} />

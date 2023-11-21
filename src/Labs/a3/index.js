@@ -2,11 +2,13 @@
 
 import JavaScript from "./JavaScript"
 import PathParameters from "./PathParameters"
-import Classes from "./Classes";
-import ConditionalOutput from "./ConditionalOutput";
-import TodoList from "./todos/TodoList";
-import Styles from "./Styles";
-import { useSelector } from "react-redux";
+import Classes from "./Classes"
+import Styles from "./Styles"
+import ConditionalOutput from "./ConditionalOutput"
+import TodoList from "./todos/TodoList"
+
+// Part of Assignment 4
+import { useSelector } from "react-redux"
 
 function Assignment3() {
 	const { todos } = useSelector((state) => state.todosReducer)

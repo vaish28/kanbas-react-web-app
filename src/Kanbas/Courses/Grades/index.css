@@ -7,10 +7,14 @@ body {
     margin: 0
 }
 
+
+/* Purposefully overrding Bootstrap  */
 .col {
     padding: 0;
 }
 
+
+/* Navbar Styles Start  */
 
 a {
     text-decoration: none;
@@ -51,7 +55,7 @@ a {
     color: grey;
 }
 
-
+/* This maintains the aspect ratio of the image */
 .logo-container img {
     width: 100%;
     height: auto;
@@ -66,7 +70,7 @@ a {
     color: white;
 }
 
-.wd-red {
+.red {
     color: #D41B2C;
 }
 
@@ -79,7 +83,9 @@ a {
     color: grey;
 }
 
+/* Navbar Styles End  */
 
+/* Main Page styles Start  */
 
 .main-page {
     width: 100%;
@@ -123,7 +129,7 @@ a {
     margin: 0.25rem;
 }
 
-
+/* Active Element  */
 .secondary-nav-active {
     border-left: 2px solid black;
     padding-left: 0.5rem;
@@ -188,7 +194,7 @@ a {
     font-size: 0.75rem;
 }
 
-.wd-inline {
+.inline {
     display: inline;
 }
 
@@ -208,7 +214,7 @@ a {
     font-size: 2rem;
 }
 
-.wd-cab {
+.cab {
     margin: 0 0.25rem;
 }
 
@@ -295,7 +301,7 @@ textarea {
 }
 
 
-.wd-search-container {
+.search-container {
     border: 1px solid #ced4da !important;
 }
 
@@ -306,7 +312,7 @@ textarea {
     font-size: 1.5rem !important;
 }
 
-.wd-relative {
+.relative {
     position: relative;
 }
 
@@ -314,7 +320,7 @@ textarea {
     text-align: center;
 }
 
-
+/* Navbar hiding on smaller screens */
 @media (max-width: 768px) {
     .navbar-content {
         display: none;

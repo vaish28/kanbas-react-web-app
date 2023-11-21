@@ -1,18 +1,19 @@
 /** @format */
 
 import React from "react"
-import "./index.css"
-import { Link } from "react-router-dom"
+
 import db from "../../../Database"
 import { useNavigate, useParams } from "react-router"
 
-
+import "./index.css"
+import { Link } from "react-router-dom"
 
 function AssignmentEditor() {
 	const { assignmentId } = useParams()
 	const { courseId } = useParams()
 	const navigate = useNavigate()
 	const handleSave = () => {
+		console.log("Actually saving assignment TBD in later assignments")
 		navigate(`/Kanbas/Courses/${courseId}/Assignments`)
 	}
 	const assignment = db.assignments.find(
@@ -25,27 +26,27 @@ function AssignmentEditor() {
 					<div className='col-12 p-0 mb-2'>
 						<button
 							type='button'
-							className='btn btn-light float-end wd-cab wd-inline'>
+							className='btn btn-light float-end cab inline'>
 							<i
 								style={{ fontSize: "1rem" }}
-								className='fa-solid fa-ellipsis-vertical wd-black'></i>
+								className='fa-solid fa-ellipsis-vertical black'></i>
 						</button>
-						<p className='m-1 p-0 wd-green float-end'></p>
+						<p className='m-1 p-0 green float-end'></p>
 						<button
 							type='button'
-							className='btn btn-outline-success wd-green float-end wd-published-button'>
-							<i className='fa-solid fa-circle-check wd-green'></i>
+							className='btn btn-outline-success green float-end published-button'>
+							<i className='fa-solid fa-circle-check green'></i>
 							Published
 						</button>
 					</div>
 				</div>
 			</div>
 			<div className='row'>
-				<hr className='wd-custom-divider ma-10' />
+				<hr className='custom-divider ma-10' />
 			</div>
 			<div className='row'>
 				<div className='mb-3'>
-					<label for='assignment-name' className='form-label'>
+					<label htmlhtmlFor='assignment-name' className='form-label'>
 						Assignment Name
 					</label>
 					<input
@@ -65,7 +66,7 @@ function AssignmentEditor() {
 				</div>
 			</div>
 			<div className='row align-items-center mb-4'>
-				<div className='col-3 wd-assignment-edit-keys align-items-center'>
+				<div className='col-3 assignment-edit-keys align-items-center'>
 					<p className='assignment-edit-key-name m-0'>Points</p>
 				</div>
 				<div className='col-9 col-lg-6 assignment-edit-values'>
@@ -78,7 +79,7 @@ function AssignmentEditor() {
 				</div>
 			</div>
 			<div className='row align-items-center mb-4'>
-				<div className='col-3 wd-assignment-edit-keys align-items-center'>
+				<div className='col-3 assignment-edit-keys align-items-center'>
 					<p className='assignment-edit-key-name m-0'>Assignment Group</p>
 				</div>
 				<div className='col-9 col-lg-6 assignment-edit-values'>
@@ -89,7 +90,7 @@ function AssignmentEditor() {
 				</div>
 			</div>
 			<div className='row align-items-center mb-4'>
-				<div className='col-3 wd-assignment-edit-keys align-items-center'>
+				<div className='col-3 assignment-edit-keys align-items-center'>
 					<p className='assignment-edit-key-name m-0'>Display Grade as</p>
 				</div>
 				<div className='col-9 col-lg-6 assignment-edit-values'>
@@ -100,7 +101,7 @@ function AssignmentEditor() {
 				</div>
 			</div>
 			<div className='row align-items-center mb-4'>
-				<div className='col-3 wd-assignment-edit-keys align-items-center'>
+				<div className='col-3 assignment-edit-keys align-items-center'>
 					<p className='assignment-edit-key-name m-0'></p>
 				</div>
 				<div className='col-9 col-lg-6 assignment-edit-values'>
@@ -111,18 +112,18 @@ function AssignmentEditor() {
 							value=''
 							id='final-grade'
 						/>
-						<label className='form-check-label' for='flexCheckDefault'>
+						<label className='form-check-label' htmlFor='flexCheckDefault'>
 							Do not count this assignment towards the final grade
 						</label>
 					</div>
 				</div>
 			</div>
 			<div className='row align-items-center mb-4'>
-				<div className='col-3 wd-assignment-edit-keys align-self-start'>
+				<div className='col-3 assignment-edit-keys align-self-start'>
 					<p className='assignment-edit-key-name m-0'>Submission Type</p>
 				</div>
 				<div className='col-9 col-lg-6 assignment-edit-values'>
-					<div className='rounded-1 wd-submission-type-container container-fluid'>
+					<div className='rounded-1 submission-type-container container-fluid'>
 						<div className='row'>
 							<div className='col-8'>
 								<select className='form-select'>
@@ -140,7 +141,9 @@ function AssignmentEditor() {
 										id='final-grade'
 										checked
 									/>
-									<label className='form-check-label' for='flexCheckDefault'>
+									<label
+										className='form-check-label'
+										htmlFor='flexCheckDefault'>
 										Text Entry
 									</label>
 								</div>
@@ -152,7 +155,9 @@ function AssignmentEditor() {
 										id='final-grade'
 										checked
 									/>
-									<label className='form-check-label' for='flexCheckDefault'>
+									<label
+										className='form-check-label'
+										htmlFor='flexCheckDefault'>
 										Website URL
 									</label>
 								</div>
@@ -164,7 +169,9 @@ function AssignmentEditor() {
 										id='final-grade'
 										checked
 									/>
-									<label className='form-check-label' for='flexCheckDefault'>
+									<label
+										className='form-check-label'
+										htmlFor='flexCheckDefault'>
 										Media Recordings
 									</label>
 								</div>
@@ -175,7 +182,9 @@ function AssignmentEditor() {
 										value=''
 										id='final-grade'
 									/>
-									<label className='form-check-label' for='flexCheckDefault'>
+									<label
+										className='form-check-label'
+										htmlFor='flexCheckDefault'>
 										Student Annotation
 									</label>
 								</div>
@@ -186,7 +195,9 @@ function AssignmentEditor() {
 										value=''
 										id='final-grade'
 									/>
-									<label className='form-check-label' for='flexCheckDefault'>
+									<label
+										className='form-check-label'
+										htmlFor='flexCheckDefault'>
 										File Uploads
 									</label>
 								</div>
@@ -196,11 +207,11 @@ function AssignmentEditor() {
 				</div>
 			</div>
 			<div className='row align-items-center mb-4'>
-				<div className='col-3 wd-assignment-edit-keys align-self-start'>
+				<div className='col-3 assignment-edit-keys align-self-start'>
 					<p className='assignment-edit-key-name m-0'>Assign</p>
 				</div>
 				<div className='col-9 col-lg-6 assignment-edit-values'>
-					<div className='rounded-1 wd-submission-type-container container-fluid m-0 p-1'>
+					<div className='rounded-1 submission-type-container container-fluid m-0 p-1'>
 						<div className='row m-0 p-2 mb-2'>
 							<p className='m-0 p-0 mt-1 mb-1'>
 								<strong>Assign to</strong>
@@ -265,7 +276,7 @@ function AssignmentEditor() {
 				</div>
 			</div>
 			<div className='row'>
-				<hr className='wd-custom-divider' />
+				<hr className='custom-divider' />
 			</div>
 			<div className='row mb-2'>
 				<div className='col-12 col-md-8'>
@@ -276,7 +287,7 @@ function AssignmentEditor() {
 							value=''
 							id='notify'
 						/>
-						<label className='form-check-label' for='notify'>
+						<label className='form-check-label' htmlFor='notify'>
 							Notify users that that this content has changed
 						</label>
 					</div>
