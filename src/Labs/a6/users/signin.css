@@ -1,0 +1,31 @@
+/* Add these styles to your existing CSS file or create a new one */
+
+.heading {
+    color: #333; /* Change the color as per your preference */
+    text-align: center;
+  }
+  
+  .usernameClass,
+  .passwordClass {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  .signinbutton {
+    background-color: #007bff; /* Change the color as per your preference */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .signinbutton:hover {
+    background-color: #0056b3; /* Change the color as per your preference */
+  }
+  
+  /* Add more styles as needed */
+  

@@ -1,0 +1,58 @@
+.account-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* index.css */
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333; /* Change the color as per your preference */
+  }
+  
+  .signup {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Change the color as per your preference */
+  }
+  
+  .signupbutton,
+  .signinbutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px; /* Add margin to separate the buttons */
+    color: black;
+    background-color: plum;
+  }
+  
+  .signupbutton:hover,
+  .signinbutton:hover {
+    opacity: 0.8; /* Add a slight opacity on hover if you like */
+  }
+  
+  .signIn {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Change the color as per your preference */
+  }
+  
+  .col-10 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; /* Use space-around for even spacing */
+  }
+  
+  /* Add more styles as needed */
+  
+
+  

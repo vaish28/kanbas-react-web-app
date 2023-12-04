@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom"
 import "./index.css"
 import KanbasLogo from "./KanbasLogo"
 
-
+// Nav Icons
 import { RiAccountCircleLine } from "react-icons/ri"
 import {
 	AiOutlineDashboard,

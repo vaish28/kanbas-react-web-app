@@ -1,3 +1,5 @@
+/** @format */
+
 import Dashboard from "./Dashboard"
 import KanbasNavigation from "./KanbasNavigation"
 import { Routes, Route, Navigate } from "react-router"
@@ -17,6 +19,7 @@ function Kanbas() {
 
 	const BASE_URL = process.env.REACT_APP_BASE_URL
 	const URL = BASE_URL + "/api/courses"
+	
 
 	const findAllCourses = async () => {
 		const response = await axios.get(URL)

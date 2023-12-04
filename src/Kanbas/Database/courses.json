@@ -8,7 +8,7 @@
 	},
 	{
 		"_id": "CS5010",
-		"name": "Programming Design Paradigm",
+		"name": "PDP",
 		"number": "CS5010",
 		"startDate": "2023-01-07",
 		"endDate": "2023-04-15"
@@ -19,13 +19,5 @@
 		"number": "CS6140",
 		"startDate": "2023-09-07",
 		"endDate": "2023-12-15"
-	},
-	{
-		"_id" : "DS2000",
-		"name": "Programming with Data",
-		"number": "DS2000",
-		"startDate": "2023-01-08",
-		"endDate": "2023-12-16"
 	}
-
 ]

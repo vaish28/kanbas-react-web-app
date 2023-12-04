@@ -57,7 +57,7 @@ function WorkingWithObjects() {
 				className='form-control mb-2 w-75'
 				type='text'
 			/>
-		
+			{/* Update Score  */}
 			<a
 				href={`${URL}/score/${assignment.score}`}
 				className='btn btn-primary me-2 float-end'>
@@ -71,7 +71,7 @@ function WorkingWithObjects() {
 				className='form-control mb-2 w-75'
 				type='number'
 			/>
-			
+			{/* Update Completed  */}
 			<a
 				href={`${URL}/completed/${assignment.completed}`}
 				className='btn btn-primary me-2 float-end'>

@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react"
 
 import "./index.css"
@@ -73,7 +75,9 @@ function Assignments() {
 												<strong className='assignment-title'>
 													{assignment?.title}
 												</strong>
-												
+												{/* <p className='p-0 m-0'>
+												Week 0 - SETUP - Week Starting on Sept 5th Module
+											</p> */}
 												<p className='p-0 m-0 mt-1 mb-1'>
 													<span className='red'>Multiple Modules</span> |{" "}
 													<strong>Due</strong> Sept 25, 2023 at 11:59pm | 100
