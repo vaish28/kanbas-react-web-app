@@ -10,8 +10,8 @@ import "./index.css"
 
 function Project() {
 	return (
-		<div className='row'>
-			<h1>A6 MONGO - FA23</h1>
+		<div className="signupdiv">
+			<h1 className="heading-assignment">A6 MONGO - FA23</h1>
 
 			<p className="signup">Sign Up for new user!</p>
 			<Link to={`/Labs/a6/signup`}>
@@ -24,7 +24,7 @@ function Project() {
 				<button className="signinbutton">Sign In</button>
 			</Link>
 
-			<div className='col-10'>
+			<div className='col-10 move'>
 				<Routes>
 					<Route path='/' element={<Navigate to='/Labs/a6/account' />} />
 					<Route path='/signin' element={<Signin />} />
